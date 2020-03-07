@@ -13,10 +13,10 @@ if [ "$(uname)" == 'Darwin' ]; then
     brew cleanup
 fi
 
-ln -s .bash_aliases $HOME/.bash_aliases
-ln -s .functions $HOME/.functions
-ln -s .vimrc $HOME/.vimrc
-ln -s .zshrc $HOME/.zshrc
+ln -s `pwd`/.bash_aliases $HOME/.bash_aliases
+ln -s `pwd`/.functions $HOME/.functions
+ln -s `pwd`/.vimrc $HOME/.vimrc
+ln -s `pwd`/.zshrc $HOME/.zshrc
+ln -s `pwd`/.gitignore_global $HOME/.gitignore_global
 
-ln -s .gitignore_global $HOME/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global

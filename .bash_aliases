@@ -46,4 +46,4 @@ alias copy='rsync -avv --stats --human-readable --itemize-changes --progress --p
 alias sort_launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 
 # :)
-[ -f "./local/.bash_aliases" ] && source "./local/.bash_aliases"
+[[ -f $HOME/dotfiles/local/.bash_aliases ]] && source $HOME/dotfiles/local/.bash_aliases

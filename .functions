@@ -52,4 +52,4 @@ list_installed_packages() {
 }
 
 # :)
-[ -f "./local/.functions" ] && source "./local/.functions"
+[[ -f $HOME/dotfiles/local/.functions ]] && source $HOME/dotfiles/local/.functions
