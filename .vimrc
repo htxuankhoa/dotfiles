@@ -1,0 +1,21 @@
+syntax on
+set nocompatible
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+set numberwidth=5
+set wrap
+set guifont=Hack
+set visualbell
+set noerrorbells
+set autoindent
+set copyindent
+set ignorecase
+set smartcase
+set nobackup
+set nowritebackup
+set t_Co=256
+set lcs=tab:▸\ ,trail:·,nbsp:_
+set list
+set ruler
