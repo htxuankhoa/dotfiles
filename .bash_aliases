@@ -1,9 +1,10 @@
 # docker
-alias dps='docker ps -a --format="table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
+alias dps='docker ps -a --format="table {{.Names}}\t{{.Status}}\t{{.Ports}}\t{{.Image}}"'
 
 # git
 alias gs="git status -b"
-alias gb='git br -v'
+alias gss="git status -sb"
+alias gb='git br -vv --sort=committerdate'
 alias gp="git pull"
 alias gd='git diff -w --color | less -r'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
@@ -28,7 +29,7 @@ alias ....="cd ../../.."
 alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
-alias aliases="vim ~/.aliases && source ~/.aliases"
+alias aliases="vim ~/.bash_aliases && source ~/.bash_aliases"
 alias zshrc="vim ~/.zshrc"
 alias cat="bat"
 alias c='clear'
