@@ -1,5 +1,5 @@
 # docker
-alias dps='docker ps -a --format="table {{.Names}}\t{{.Status}}\t{{.Ports}}\t{{.Image}}"'
+alias dps='docker ps -a --format="table {{.Names}}\t{{.Status}}\t{{.Ports}}\t{{.Image}}\t{{.Size}}"'
 
 # git
 alias gs="git status -b"
@@ -45,6 +45,8 @@ alias weather='curl -s wttr.in/ho_chi_minh'
 alias week='date +%V'
 alias copy='rsync -avv --stats --human-readable --itemize-changes --progress --partial'
 alias sort_launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
+alias phpini="php -i | grep 'php.ini'"
+alias python="python3 "
 
 # :)
 [[ -f $HOME/dotfiles/local/.bash_aliases ]] && source $HOME/dotfiles/local/.bash_aliases

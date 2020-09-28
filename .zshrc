@@ -5,7 +5,7 @@ ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
 HIST_STAMPS="dd/mm/yyyy"
 
-plugins=(git)
+plugins=(git emoji)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,3 +19,9 @@ source $HOME/.bash_profile
 source $HOME/.functions
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# cow says
+NEWLINE=$'\n'
+PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+PROMPT+=' %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)${NEWLINE}$(random_emoji animals) '
+fortune | cowsay
