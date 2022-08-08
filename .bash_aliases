@@ -9,6 +9,9 @@ alias gp="git pull"
 alias gd='git diff -w --color | less -r'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias nah="git reset --hard && git clean -df && git pull && git remote prune origin"
+alias gg="git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }'"
+alias ggd="git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }' | xargs -r git branch -d"
+alias setup_git_account="git config user.name 'htxuankhoa' && git config user.email 'htxuankhoa@gmail.com'"
 
 # laravel
 alias art="php artisan"
@@ -47,6 +50,8 @@ alias copy='rsync -avv --stats --human-readable --itemize-changes --progress --p
 alias sort_launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 alias phpini="php -i | grep 'php.ini'"
 alias python="python3 "
+alias removeproxy="npm config --global rm proxy && npm config --global rm https-proxy && npm config list"
+alias chromeextensions="cd Library/Application Support/Google/Chrome/Default/Extensions"
 
 # :)
 [[ -f $HOME/dotfiles/local/.bash_aliases ]] && source $HOME/dotfiles/local/.bash_aliases
