@@ -5,6 +5,9 @@ if [ "$(uname)" == 'Darwin' ]; then
     # install Brew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+    # install oh-my-zsh
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
     brew update && brew upgrade
 
     brew install coreutils moreutils findutils
