@@ -50,7 +50,7 @@ alias copy='rsync -avv --stats --human-readable --itemize-changes --progress --p
 alias sort_launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 alias phpini="php -i | grep 'php.ini'"
 alias python="python3 "
-alias removeproxy="npm config --global rm proxy && npm config --global rm https-proxy && npm config list"
+alias removeproxy="npm config --location=global rm proxy && npm config --location=global rm https-proxy && npm config list"
 alias chromeextensions="cd Library/Application Support/Google/Chrome/Default/Extensions"
 
 # :)
