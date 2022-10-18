@@ -15,7 +15,7 @@ if [ "$(uname)" == 'Darwin' ]; then
     brew install automake bat wget git node tree gradle hugo xclip vim
     brew install ideviceinstaller ios-deploy watchman pkg-config python@3
     brew install zsh zsh-completions imagemagick ffmpeg
-    brew install fortune cowsay yarn
+    brew install fortune yarn starship
     brew cask install android-platform-tools
     brew cask install spectacle firefox
 
