@@ -50,6 +50,10 @@ alias copy='rsync -avv --stats --human-readable --itemize-changes --progress --p
 alias sort_launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 alias phpini="php -i | grep 'php.ini'"
 alias python="python3 "
+alias colors='for code in {000..255}; do print -P -- "$code: %F{$code}Color%f"; done'
+alias enablegatekeeper='sudo spctl --master-enable'
+alias disablegatekeeper='sudo spctl --master-disable'
+alias gatekeeperstatus='spctl --status'
 alias removeproxy="npm config --location=global rm proxy && npm config --location=global rm https-proxy && npm config list"
 alias chromeextensions="cd Library/Application Support/Google/Chrome/Default/Extensions"
 
