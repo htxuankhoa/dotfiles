@@ -33,7 +33,6 @@ if [ "$(uname)" == 'Darwin' ]; then
     brew install imagemagick
     brew install ffmpeg
     brew install yarn
-    brew install starship
 
     # brew install ideviceinstaller
     # brew install ios-deploy

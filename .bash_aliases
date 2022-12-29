@@ -11,7 +11,7 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias nah="git reset --hard && git clean -df && git pull && git remote prune origin"
 alias gg="git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }'"
 alias ggd="git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }' | xargs -r git branch -d"
-alias setup_git_account="git config user.name 'htxuankhoa' && git config user.email 'htxuankhoa@gmail.com'"
+alias setup_git_account="git config user.name 'htxuankhoa' && git config user.email 'htxuankhoa@gmail.com'  && echo 'Git account has been setted up'"
 
 # laravel
 alias art="php artisan"
