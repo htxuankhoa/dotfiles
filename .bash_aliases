@@ -3,26 +3,15 @@ alias dps='docker ps -a --format="table {{.Names}}\t{{.Status}}\t{{.Ports}}\t{{.
 
 # git
 alias gs="git status -b"
-alias gss="git status -sb"
 alias gb='git br -vv --sort=committerdate'
-alias gp="git pull"
+alias gp="git pull --rebase --prune"
 alias gd='git diff -w --color | less -r'
+alias gwip="git commit -am 'wip'"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias nah="git reset --hard && git clean -df && git pull && git remote prune origin"
 alias gg="git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }'"
 alias ggd="git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }' | xargs -r git branch -d"
-alias setup_git_account="git config user.name 'htxuankhoa' && git config user.email 'htxuankhoa@gmail.com'  && echo 'Git account has been setted up'"
-
-# laravel
-alias art="php artisan"
-alias cdump="composer dumpauto"
-alias lm="php artisan migrate"
-alias lmf="php artisan migrate:refresh"
-
-# mobile
-alias simulators_ios="xcrun simctl list devices"
-alias simulators_android="emulator -list-avds"
-alias android_tools="cd ~/Library/Android/sdk/platform-tools"
+alias setup_git_account="git config user.name 'htxuankhoa' && git config user.email 'htxuankhoa@gmail.com'  && echo 'Done 🔥'"
 
 # system
 alias ~="cd ~ && clear"
@@ -44,18 +33,15 @@ alias edit_path="vim ~/.bash_profile && source ~/.bash_profile"
 alias hosts="sudo vim /etc/hosts"
 alias localip="ipconfig getifaddr en0"
 alias publicip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias weather='curl -s wttr.in/ho_chi_minh'
-alias week='date +%V'
-alias copy='rsync -avv --stats --human-readable --itemize-changes --progress --partial'
 alias sort_launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
-alias phpini="php -i | grep 'php.ini'"
 alias python="python3 "
-alias colors='for code in {000..255}; do print -P -- "$code: %F{$code}Color%f"; done'
 alias enablegatekeeper='sudo spctl --master-enable'
 alias disablegatekeeper='sudo spctl --master-disable'
 alias gatekeeperstatus='spctl --status'
 alias removeproxy="npm config --location=global rm proxy && npm config --location=global rm https-proxy && npm config list"
 alias chromeextensions="cd Library/Application Support/Google/Chrome/Default/Extensions"
+alias updatenodejs="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && sudo npm install -g npm@latest && node -v && npm -v"
 
 # :)
 [[ -f $HOME/dotfiles/local/.bash_aliases ]] && source $HOME/dotfiles/local/.bash_aliases
+
