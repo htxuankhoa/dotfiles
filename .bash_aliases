@@ -6,7 +6,7 @@ alias gs="git status -b"
 alias gb='git br -vv --sort=committerdate'
 alias gp="git pull --rebase --prune"
 alias gd='git diff -w --color | less -r'
-alias gwip="git commit -am 'wip'"
+alias wip="git commit -am 'wip'"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias nah="git reset --hard && git clean -df && git pull && git remote prune origin"
 alias gg="git branch -vv | grep ': gone]'|  grep -v '\\*' | awk '{ print $1; }'"
