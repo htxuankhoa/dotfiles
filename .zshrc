@@ -19,3 +19,6 @@ source $HOME/.bash_profile
 source $HOME/.functions
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(rbenv init - zsh)"
+
