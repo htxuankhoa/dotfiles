@@ -4,7 +4,7 @@ alias dps='docker ps -a --format="table {{.Names}}\t{{.Status}}\t{{.Ports}}\t{{.
 # git
 alias gs="git status -b"
 alias gb='git br -vv --sort=committerdate'
-alias gp="git pull --rebase --prune"
+alias gp="git pull --prune"
 alias gd='git diff -w --color | less -r'
 alias wip="git commit -am 'wip'"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
@@ -44,4 +44,3 @@ alias updatenodejs="sudo npm cache clean -f && sudo npm install -g n && sudo n s
 
 # :)
 [[ -f $HOME/dotfiles/local/.bash_aliases ]] && source $HOME/dotfiles/local/.bash_aliases
-
