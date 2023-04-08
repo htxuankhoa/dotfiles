@@ -12,8 +12,3 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bash_aliases
 source $HOME/.bash_profile
-
-eval "$(rbenv init - zsh)"
-
-# :)
-[[ -f $HOME/dotfiles/local/.zshrc ]] && source $HOME/dotfiles/local/.zshrc
