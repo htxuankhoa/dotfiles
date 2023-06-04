@@ -41,6 +41,7 @@ alias gatekeeperstatus='spctl --status'
 alias removeproxy="npm config --location=global rm proxy && npm config --location=global rm https-proxy && npm config list"
 alias chromeextensions="cd Library/Application Support/Google/Chrome/Default/Extensions"
 alias updatenodejs="sudo npm cache clean -f && sudo npm install -g n && sudo n stable && sudo npm install -g npm@latest && node -v && npm -v"
+alias phpserver="php -S localhost:8000"
 
 # :)
 [[ -f $HOME/dotfiles/local/.bash_aliases ]] && source $HOME/dotfiles/local/.bash_aliases
